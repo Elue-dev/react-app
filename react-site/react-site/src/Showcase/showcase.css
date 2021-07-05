@@ -1,0 +1,74 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  background: url("react.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  z-index: 1;
+}
+
+.showcase h1 {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 31.25rem) {
+  .showcase h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.showcase p {
+  max-width: 56rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media screen and (max-width: 31.25rem) {
+  .showcase p {
+    font-size: 0.8rem;
+  }
+}
+
+.showcase span {
+  color: #3c96eb;
+  font-weight: 700;
+}
+
+.showcase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  height: 100%;
+  width: 100%;
+  opacity: .8;
+  z-index: -1;
+}
+/*# sourceMappingURL=showcase.css.map */

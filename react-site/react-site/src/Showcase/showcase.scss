@@ -1,0 +1,43 @@
+@import 'mixins';
+
+.showcase{
+    @include flexBox(center);
+    flex-direction: column;
+    color: $light;
+    background: url('react.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+    z-index: 1;
+    h1{
+        margin-bottom: 1rem;
+        @include mQ (31.25rem){
+            font-size: 1.8rem;
+        }
+    }
+        p{
+            max-width: 56rem;
+            line-height: 1.5;
+            text-align: center;
+            @include mQ (31.25rem){
+                font-size: 0.8rem;
+            }
+        }
+        span{
+            color: $mainColor;
+            font-weight: 700;
+        }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $dark;
+        height: 100%;
+        width: 100%;
+        opacity: .8;
+        z-index: -1;
+    }
+}

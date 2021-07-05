@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+$light: #fff;
+$dark: #000;
+$mainColor: rgb(60, 150, 235);
+
+@mixin flexBox ($justify){
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+}
+
+@mixin mQ ($respond){
+    @media screen and (max-width: $respond){
+        @content;
+    }
+}

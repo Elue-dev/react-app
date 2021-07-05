@@ -1,0 +1,23 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+  background: #282c34;
+  margin-top: 3rem;
+  height: 2rem;
+}
+
+.footer h5 {
+  text-align: center;
+  color: #fff;
+  margin-top: 0.8rem;
+}
+/*# sourceMappingURL=footer.css.map */

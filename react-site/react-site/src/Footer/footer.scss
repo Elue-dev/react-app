@@ -1,0 +1,12 @@
+@import 'mixins';
+
+.footer{
+    background: #282c34;
+    margin-top: 3rem;
+    height: 2rem;
+    h5{
+        text-align: center;
+        color: $light;
+        margin-top: 0.8rem
+    }
+}
